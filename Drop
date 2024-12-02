@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class DropChanceCalculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Drop rate (percentage): ");
+        double dropRate = sc.nextDouble();
+
+        System.out.print("Number of attempts: ");
+        int attempts = sc.nextInt();
+
+        double expectedDrops = (dropRate / 100) * attempts;
+
+        System.out.println("Expected drops: " + expectedDrops);
+    }
+}
